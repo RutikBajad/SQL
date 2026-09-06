@@ -1,0 +1,60 @@
+SQL PRACTICE QUESTIONS
+Topics: SELECT, DISTINCT, FROM, WHERE, GROUP BY, HAVING, ORDER BY, LIMIT
+
+1. Display all columns and all employees from the employees table.
+
+2. Display only the fname, department, and salary of every employee.
+
+3. Display the fname, age, and city of all employees.
+
+4. Display all unique departments in the company.
+
+5. Display all unique cities where employees live.
+
+6. Display all unique combinations of department and city.
+
+7. Find all employees whose salary is greater than 70,000.
+
+8. Find all employees who work in the IT department.
+
+9. Find all active employees from Pune.
+
+10. Find employees who are older than 25 AND have a salary greater than 60,000.
+
+11. Display the 5 highest-paid employees.
+    Hint: Combine LIMIT with ORDER BY.
+
+12. Display the 3 youngest employees.
+
+13. Find the number of employees in each department.
+
+14. Find the average salary of each department.
+
+15. Find the maximum salary in each city.
+
+16. Find the number of employees in each city.
+
+17. Find departments having more than 4 employees.
+    Hint: Use GROUP BY + HAVING.
+
+18. Find departments whose average salary is greater than 65,000.
+
+19. Find the top 3 highest-paid active employees.
+    Your query should use:
+    SELECT, FROM, WHERE, ORDER BY, LIMIT
+
+20. CHALLENGE:
+    For each department, display:
+    - department
+    - number of employees
+    - average salary
+    - maximum salary
+
+    Only show departments where:
+    - average salary > 60,000
+    - number of employees >= 4
+
+    Finally, sort the result by average salary from highest to lowest.
+
+    Your query should use:
+    SELECT, FROM, GROUP BY, HAVING, ORDER BY
