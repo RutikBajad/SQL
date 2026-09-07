@@ -1,0 +1,124 @@
+SQL DDL PRACTICE QUESTIONS
+Topics: CREATE, ALTER, DROP, Constraints, Data Types
+
+1. Create a table called students with these columns:
+   - student_id → integer
+   - fname → variable-length string
+   - age → integer
+   - city → variable-length string
+
+2. Create a table called products with:
+   - product_id
+   - product_name
+   - price
+   - category
+   Choose appropriate data types for each column.
+
+3. Create a table called employees with:
+   - employee_id
+   - fname
+   - department
+   - salary
+   - joining_year
+   Make employee_id the PRIMARY KEY.
+
+4. Create a table called customers with:
+   - customer_id
+   - fname
+   - email
+   - age
+   Make customer_id the PRIMARY KEY and email UNIQUE.
+
+5. Create a table called courses with:
+   - course_id
+   - course_name
+   - duration
+   - fees
+   Choose suitable data types and make course_id the PRIMARY KEY.
+
+6. Add a column called phone to the students table.
+
+7. Add a column called email to the students table.
+
+8. Modify the phone column so that it can store up to 15 characters.
+   Think carefully about the data type. Phone numbers should not necessarily be stored as integers.
+
+9. Rename the column fname in students to full_name.
+
+10. Rename the students table to student_details.
+
+11. Add a salary column to the employees table with an appropriate numeric data type.
+
+12. Add a UNIQUE constraint to the email column of the customers table.
+
+13. Add a NOT NULL constraint to the fname column of the customers table.
+
+14. Add a column called status to the employees table and give it a default value of 'Active'.
+
+15. Remove the phone column from the student_details table.
+
+16. Create a temporary table called test_table with at least three columns.
+    Then completely remove the table using DROP TABLE.
+
+17. Create two tables:
+    - department
+    - employee
+    Then delete only the employee table without deleting department.
+
+18. Create a table called old_students.
+    Then delete it only if it exists, so that your query doesn't produce an error if the table has already been deleted.
+
+19. EMPLOYEE DATABASE CHALLENGE
+
+    Create an employees table containing:
+    - employee_id
+    - fname
+    - email
+    - department
+    - salary
+    - joining_year
+    - city
+
+    Requirements:
+    - employee_id → PRIMARY KEY
+    - fname → NOT NULL
+    - email → UNIQUE
+    - salary → suitable numeric type
+    - city → suitable string type
+
+    Then:
+    1. Add a phone column.
+    2. Rename fname to full_name.
+    3. Modify phone to allow 15 characters.
+    4. Add a default 'Active' status column.
+    5. Remove the phone column.
+
+    Do all of this using DDL commands without recreating the table.
+
+20. MASTER CHALLENGE
+
+    Start with a table called company.
+
+    Create a table containing:
+    - employee_id
+    - fname
+    - department
+    - salary
+    - city
+
+    Then perform this sequence:
+
+    Step 1: Make employee_id the primary key.
+    Step 2: Add an email column.
+    Step 3: Make email unique.
+    Step 4: Add an age column.
+    Step 5: Rename fname to full_name.
+    Step 6: Modify salary to an appropriate decimal type.
+    Step 7: Add a status column with default value 'Active'.
+    Step 8: Remove the age column.
+    Step 9: Rename the table to company_employees.
+    Step 10: Create another table called backup_employees.
+    Step 11: Finally, drop backup_employees.
+
+Goal:
+Complete all 20 questions without looking at notes. These questions are designed to master CREATE, ALTER, DROP, and basic table constraints in MySQL.
