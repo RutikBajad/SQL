@@ -103,7 +103,7 @@ where customer_name like '%Shah%'
 order by order_date desc;
 
 -- 10. Display distinct cities from which customers have placed orders, sorted alphabetically.
-select distinct city from orders
+select distinct customer_name, city from orders
 order by city;
 
 -- 11. Create a CASE column called discount_category: 'High Discount' for discount_percent >= 20, 'Medium Discount' for 10–19.99, and 'Low/No Discount' for below 10.
